@@ -40,7 +40,7 @@
 			<input type="text" name="find" placeholder="Type to search">
 		</div>
 		<div class="header__account">
-			<button type="button"> Sign in</button>
+			<button id="signIn" type="button">Sign in</button>
 		</div>
 	</header>
 	<main>
@@ -62,8 +62,40 @@
 
 		</section>
 	</main>
+
+	<div id="overlay" class="overlay"></div>
+
+	<div id="authFrame" class="auth-frame">
+		<div class="auth-frame__header">
+			<div></div>
+			<div class="auth-frame__header__title">
+				<p>Авторизация</p>
+			</div>
+			<div id="closeAuthFrame" class="auth-frame__header__close">
+				X
+			</div>
+		</div>
+		<div class="auth-frame__main">
+			<form method="POST">
+				<label for="login">Ваш логин (или e-mail):</label>
+				<input type="text" name="login" placeholder="Enter your login or e-mail">
+				<label for="password">Ваш пароль:</label>
+				<input type="password" name="password" placeholder="Enter your password">
+				<div class="auth-frame__main__button">
+					<button type=submit>Войти</button>
+				</div>
+			</form>
+		</div>
+		<div class="auth-frame__footer">
+			<div class="auth-frame__footer__log-in">
+				<p>Регистрация</p>
+			</div>
+		</div>
+	</div>
+
 	<footer>
 		&copy; XAOTI - 2024
 	</footer>
+	<script src="js/authorization.js"></script>
 </body>
 </html>
