@@ -16,9 +16,6 @@
 	--border-light-dark: 1px solid #111111;
 	--border-darkviolet: 1vw solid darkviolet;
 
-	--font-size: 20px;
-	--font-footer-size: 25px;
-
 	--text-indent: 4vw;
 
 	--icon-size: 10vw;
@@ -45,4 +42,5 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 	height: 100vh;
+	width: 100%;
 }
